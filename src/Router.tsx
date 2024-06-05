@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
 import Main from './layouts/Main';
-import { Home, Login, NotFound } from './pages';
+import { Home, Login, NotFound, SignUp } from './pages';
 
 interface RouteElement {
   path: string;
@@ -19,6 +19,7 @@ const routes: RouteElement[] = [
     children: [
       { path: '', element: <Home /> },
       { path: '/login', element: <Login /> },
+      { path: '/signup', element: <SignUp /> },
     ],
   },
 ];
