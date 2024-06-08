@@ -7,7 +7,11 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <HeaderLogo onClick={() => navigate('/')}>Toolbox</HeaderLogo>
-      <HeaderRight onClick={() => navigate('/login')}>로그인</HeaderRight>
+      {localStorage.getItem('accessToken') !== null ? (
+        <HeaderRight onClick={() => navigate('/mypage')}>마이 페이지</HeaderRight>
+      ) : (
+        <HeaderRight onClick={() => navigate('/login')}>로그인</HeaderRight>
+      )}
     </HeaderWrapper>
   );
 };

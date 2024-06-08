@@ -1,4 +1,11 @@
+export { default as ConvertImage } from './ConvertImage.page';
+export { default as Encrypt } from './Encrypt.page';
+export { default as Extract } from './Extract.page';
 export { default as Home } from './Home.page';
 export { default as Login } from './Login.page';
+export { default as Merge } from './Merge.page';
+export { default as MyPage } from './MyPage.page';
 export { default as NotFound } from './NotFound';
+export { default as PDFConvert } from './PDFConvert.page';
 export { default as SignUp } from './SignUp.page';
+export { default as Split } from './Split.page';

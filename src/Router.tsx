@@ -2,7 +2,19 @@ import { ReactNode } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
 import Main from './layouts/Main';
-import { Home, Login, NotFound, SignUp } from './pages';
+import {
+  ConvertImage,
+  Encrypt,
+  Extract,
+  Home,
+  Login,
+  Merge,
+  MyPage,
+  NotFound,
+  PDFConvert,
+  SignUp,
+  Split,
+} from './pages';
 
 interface RouteElement {
   path: string;
@@ -18,8 +30,15 @@ const routes: RouteElement[] = [
     errorElement: <NotFound />,
     children: [
       { path: '', element: <Home /> },
+      { path: '/convert_image', element: <ConvertImage /> },
+      { path: '/encrypt', element: <Encrypt /> },
+      { path: '/extract', element: <Extract /> },
       { path: '/login', element: <Login /> },
+      { path: '/merge', element: <Merge /> },
+      { path: '/mypage', element: <MyPage /> },
+      { path: '/pdf_to_png', element: <PDFConvert /> },
       { path: '/signup', element: <SignUp /> },
+      { path: '/split', element: <Split /> },
     ],
   },
 ];
