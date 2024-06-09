@@ -17,7 +17,7 @@ const postExtract = async (file: File) => {
       },
     });
     console.log('Extract Response', response.data);
-    return response.data.text;
+    return response.data.filename;
   } catch (error) {
     if (error === AxiosError) {
       console.error(error);
